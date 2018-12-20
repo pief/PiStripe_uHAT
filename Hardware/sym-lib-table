@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name Connector-ML)(type Legacy)(uri ${KIPRJMOD}/symbols/mikelawrence/Connector-ML.lib)(options "")(descr https://github.com/mikelawrence/RPi_Zero_pHat_Template))
+  (lib (name Digikey)(type Legacy)(uri ${KIPRJMOD}/symbols/digikey/dk_Transistors-FETs-MOSFETs-Single.lib)(options "")(descr https://github.com/digikey/digikey-kicad-library))
+  (lib (name TPS54202)(type Legacy)(uri ${KIPRJMOD}/symbols/lbernstone/tps54202.lib)(options "")(descr https://github.com/lbernstone/TPS54202/))
+  (lib (name DMMT5401)(type Legacy)(uri ${KIPRJMOD}/symbols/tinkerforge/DMMT5401.lib)(options "")(descr https://github.com/Tinkerforge/kicad-libraries))
+)
