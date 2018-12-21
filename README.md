@@ -31,8 +31,8 @@ The uHAT features the following five functions:
   [Raspberry Foundation Add-On board / HAT design guide](https://github.com/raspberrypi/hats/blob/master/designguide.md) to prevent damage when accidentally connecting both 5V to the RPi via its MicroUSB connector and supplying power via my HAT does
   not cause damage.
 - the actual LED strip driving
-- the possibility to connect an external IR receiver such as a TSOP 34838 so you can use [LIRC](http://lirc.org/) to decode the signals sent by the LED strip's original remote control.
-- an ID EEPROM so the board qualifies officially as a HAT as described in the official [Raspberry Foundation Add-On board / HAT design guide](https://github.com/raspberrypi/hats/blob/master/designguide.md).
+- the possibility to connect an external IR receiver such as a TSOP 34838 so you can use [LIRC](http://lirc.org/) to decode the signals sent by the LED strip's original remote control. External because the HAT is mounted on the Raspberry Pi which in turn will probably be hidden away in some corner whereas you will want to place the IR receiver at a place where it can actually "see" the remote control.
+- an ID EEPROM so the board qualifies officially as a HAT as described in the [Raspberry Foundation Add-On board / HAT design guide](https://github.com/raspberrypi/hats/blob/master/designguide.md).
 
 ## Hardware
 
