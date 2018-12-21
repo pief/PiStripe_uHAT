@@ -52,6 +52,20 @@ The PiStripe uHAT uses the following GPIO pins:
 |               27             |      ID_SD      |     ID EEPROM I2C Data     |    No     |
 |               28             |      ID_SC      |     ID EEPROM I2C Clock    |    No     |
 
+### Jumpers
+
+There are two jumpers:
+
+| Jumper |   Name   |                        Function                        |
+| :----: | :------: | :----------------------------------------------------: |
+|  JP1   | GPIO_PWR | Open: Raspberry Pi is powered over Micro USB connector |
+|        | GPIO_PWR | Closed: Enable back powering the Raspberry Pi via GPIO |
+|  JP2   |   WR_EN  |                   Open: Normal usage                   |
+|        |   WR_EN  |           Closed: ID EEPROM can be programmed          |
+
+Whether you leave JP1 open or closed depends on whether you want to use the "back powering" feature, thus requiring only the LED stripe's +12V power supply, or keep supplying the Raspberry Pi via its Micro USB connector. Even if you accidentally close JP1 and still connect power to the Pi's Micro USB connector, nothing should go wrong thanks to the "perfect" reverse current blocking diode.
+
+JP2 should only be closed once to program the ID EEPROM (no instructions and software for this yet) and stay open afterwards to prevent accidental flashing.
 
 ### Design files
 
