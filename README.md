@@ -1,5 +1,7 @@
 # PiStripe uHAT
 
+![Image of PCB top side](Hardware/PiStripe_uHAT-PCB-Top.png)
+
 ## WARNING
 
 Neither the schematic nor the PCB have been built and/or tested yet. Any usage is at your own risk.
@@ -16,7 +18,7 @@ The closest existing solution is the [ANAVI Light pHAT](https://www.crowdsupply.
 where I'd prefer a more compact pin header that matches the existing LED strip connector. But most of all, I don't like having to use two power supplies, one with 12V for the LED strip and still one with 5V for the Raspberry Pi. Unfortunately, with the ANAVI pHAT, it was decided to not implement the back powering option, i.e. integrating a switching regular to convert 12V to 5V and supply these to the Raspberry Pi via the GPIO pins. Instead the PCB space was used for various options for all kinds of sensors,
 something I don't really need.
 
-So I thought, inspite of being not literate at electronics enough I'd build something myself and take the best parts and features of these existing solutions and combine them into a HAT of my own. After all, that's what open hardware is all about!
+So I thought, inspite of being not literate at electronics enough I'd build something myself and take the best parts and features of existing solutions (see Credits below) and combine them into a HAT of my own. After all, that's what open hardware is all about!
 
 ## Features
 
@@ -30,9 +32,23 @@ The PiStripe uHAT has the following five functions:
 - the possibility to connect an external IR receiver such as a TSOP 34838 so you can use [LIRC](http://lirc.org/) to decode the signals sent by the LED strip's original remote control.
 - an ID EEPROM so the board qualifies officially as a HAT as described in the official [Raspberry Foundation Add-On board / HAT design guide](https://github.com/raspberrypi/hats/blob/master/designguide.md).
 
-## Repo structure
+KiCad files for the board's schematic and PCB design can be found in the ``Hardware`` folder.
 
-As the board has not been built yet, there is no software yet. KiCad files for the board's schematic and PCB design can be found in the ``Hardware`` folder.
+## Schematic
+
+``Hardware/PiStripe_uHAT.sch``
+
+![Image of Schematic](Hardware/PiStripe_uHAT-Schematic.png)
+
+## PCB
+
+``Hardware/PiStripe_uHAT.kicab_pcb``
+
+![Image of naked PCB design](Hardware/PiStripe_uHAT-PCB-Design.png)
+![Image of PCB top side without parts](Hardware/PiStripe_uHAT-Board-PCB-NoParts.png)
+![Image of PCB bottom side](Hardware/PiStripe_uHAT-PCB-Bottom.png)
+![Image of PCB top side](Hardware/PiStripe_uHAT-PCB-Top.png)
+
 
 ## Credits
 
