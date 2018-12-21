@@ -4,7 +4,7 @@
 
 ## WARNING
 
-Neither the schematic nor the PCB have been built and/or tested yet. Any usage is at your own risk.
+The schematic needs a review and the PCB has been neither built nor tested yet. Any usage is at your own risk.
 
 ## Background
 
@@ -22,7 +22,9 @@ So I thought, inspite of being not literate at electronics enough I'd build some
 
 ## Features
 
-The PiStripe uHAT has the following five functions:
+The PiStripe uHAT is a board of the size of the Raspberry Pi Zero, thus a uHAT (not a HAT) as defined by the Raspberry Foundation. It can be attached on any Raspberry Pi with the 40 pin connector, not just the Pi Zero (W).
+
+The uHAT features the following five functions:
 
 - a 12V -> 5V buck converter based on Texas Instruments' [TPS54202](http://www.ti.com/lit/ds/symlink/tps54202.pdf) chip to implement "back powering" the Raspberry Pi via the GPIO pins, doing away with the need to use two power supplies (one 12V for the LED strip, one 5V for the Raspberry Pi).
 - a "perfect" reverse current blocking diode schematic as described in the
@@ -32,23 +34,28 @@ The PiStripe uHAT has the following five functions:
 - the possibility to connect an external IR receiver such as a TSOP 34838 so you can use [LIRC](http://lirc.org/) to decode the signals sent by the LED strip's original remote control.
 - an ID EEPROM so the board qualifies officially as a HAT as described in the official [Raspberry Foundation Add-On board / HAT design guide](https://github.com/raspberrypi/hats/blob/master/designguide.md).
 
-KiCad files for the board's schematic and PCB design can be found in the ``Hardware`` folder.
+## Hardware
+
+KiCad files for the board's schematic and PCB design can be found in the [Hardware](Hardware/) folder.
 
 ## Schematic
 
-``Hardware/PiStripe_uHAT.sch``
+Here's an image of the schematic:
 
 ![Image of Schematic](Hardware/PiStripe_uHAT-Schematic.png)
 
+As you can see, the schematic is clearly divided into different blocks that corrospond to the functions listed above, so comparisons with the original sources for the schematics (see "Credits" below) should be rather easy.
+
 ## PCB
 
-``Hardware/PiStripe_uHAT.kicab_pcb``
+Here are some images of the PCB:
 
 ![Image of naked PCB design](Hardware/PiStripe_uHAT-PCB-Design.png)
 ![Image of PCB top side without parts](Hardware/PiStripe_uHAT-Board-PCB-NoParts.png)
 ![Image of PCB bottom side](Hardware/PiStripe_uHAT-PCB-Bottom.png)
 ![Image of PCB top side](Hardware/PiStripe_uHAT-PCB-Top.png)
 
+Like the schematic, the PCB has guiding lines printed on top to isolate the different function blocks.
 
 ## Credits
 
