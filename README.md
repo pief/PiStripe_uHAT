@@ -36,9 +36,28 @@ The uHAT features the following five functions:
 
 ## Hardware
 
-KiCad files for the board's schematic and PCB design can be found in the [Hardware](Hardware/) folder.
+### GPIOs used
 
-## Schematic
+The PiStripe uHAT uses the following GPIO pins:
+
+|          GPIO pins           |    Pin name     |            Usage           | Exclusive |
+| :--------------------------: | :-------------: | :------------------------: | :-------: |
+|              1, 17           |      +3.3V      |   IR receiver, ID EEPROM   |    No     |
+|              2, 4            |       +5V       | Back powering Raspberry Pi |    No     |
+| 6, 9, 14, 20, 25, 30, 34, 39 |       GND       |           Ground           |    No     |
+|               12             |      GPIO18     |      IR receiver data      |    Yes    |
+|               19             | GPIO10_SPI_MOSI |   LED color 1 (e.g. Red)   |    Yes    |
+|               21             | GPIO09_SPI_MISO |  LED color 2 (e.g. Green)  |    Yes    |
+|               23             | GPIO11_SPI_CLK  |   LED color 3 (e.g. Blue)  |    Yes    |
+|               27             |      ID_SD      |     ID EEPROM I2C Data     |    No     |
+|               28             |      ID_SC      |     ID EEPROM I2C Clock    |    No     |
+
+
+### Design files
+
+The board's schematic and PCB have been designed with [KiCad](http://www.kicad-pcb.org), a really powerful Open Source EDA solution and a worthy alternative to commercial products such as Eagle. All project files can be found in the [Hardware](Hardware/) folder.
+
+#### Schematic
 
 Here's an image of the schematic:
 
@@ -46,7 +65,7 @@ Here's an image of the schematic:
 
 As you can see, the schematic is clearly divided into different blocks that corrospond to the functions listed above, so comparisons with the original sources for the schematics (see "Credits" below) should be rather easy.
 
-## PCB
+#### PCB
 
 Here are some images of the PCB:
 
