@@ -84,7 +84,7 @@ As you can see, the schematic is clearly divided into different blocks that corr
 Here are some images of the PCB:
 
 ![Image of naked PCB design](Hardware/PiStripe_uHAT-PCB-Design.png)
-![Image of PCB top side without parts](Hardware/PiStripe_uHAT-Board-PCB-NoParts.png)
+![Image of PCB top side without parts](Hardware/PiStripe_uHAT-PCB-Top-NoParts.png)
 ![Image of PCB bottom side](Hardware/PiStripe_uHAT-PCB-Bottom.png)
 ![Image of PCB top side](Hardware/PiStripe_uHAT-PCB-Top.png)
 
