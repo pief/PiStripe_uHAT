@@ -45,9 +45,9 @@ The PiStripe uHAT uses the following GPIO pins:
 |              1, 17           |      +3.3V      |   IR receiver, ID EEPROM   |    No     |
 |              2, 4            |       +5V       | Back powering Raspberry Pi |    No     |
 | 6, 9, 14, 20, 25, 30, 34, 39 |       GND       |           Ground           |    No     |
-|               12             |      GPIO18     |      IR receiver data      |    Yes    |
 |               19             | GPIO10_SPI_MOSI |   LED color 1 (e.g. Red)   |    Yes    |
 |               21             | GPIO09_SPI_MISO |  LED color 2 (e.g. Green)  |    Yes    |
+|               22             |      GPIO25     |      IR receiver data      |    Yes    |
 |               23             | GPIO11_SPI_CLK  |   LED color 3 (e.g. Blue)  |    Yes    |
 |               27             |      ID_SD      |     ID EEPROM I2C Data     |    No     |
 |               28             |      ID_SC      |     ID EEPROM I2C Clock    |    No     |
