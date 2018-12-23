@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:PiStripe_uHAT-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PiStripe_uHAT"
-Date "2018-12-20"
-Rev ""
+Date "2018-12-24"
+Rev "0.4"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -62,7 +63,6 @@ NoConn ~ 8600 3000
 NoConn ~ 8600 3100
 NoConn ~ 8600 3400
 NoConn ~ 8600 3500
-NoConn ~ 8600 3700
 NoConn ~ 8600 3800
 NoConn ~ 8600 3900
 NoConn ~ 8600 4200
@@ -799,8 +799,6 @@ Wire Wire Line
 Wire Wire Line
 	8800 2800 9300 2800
 Connection ~ 9300 2800
-Wire Wire Line
-	8600 3200 9150 3200
 $Comp
 L power:GND #PWR013
 U 1 1 5C141949
@@ -1127,8 +1125,6 @@ Wire Wire Line
 Wire Wire Line
 	6800 5600 6800 6100
 Wire Wire Line
-	9150 3200 9150 5350
-Wire Wire Line
 	9300 2800 9300 3650
 $Comp
 L Device:CP C8
@@ -1242,4 +1238,8 @@ Wire Wire Line
 	5050 6200 5050 6300
 Wire Wire Line
 	5050 6300 5500 6300
+Wire Wire Line
+	8600 3700 9150 3700
+Wire Wire Line
+	9150 3700 9150 5350
 $EndSCHEMATC
