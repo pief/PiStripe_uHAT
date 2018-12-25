@@ -90,6 +90,12 @@ Here are some images of the PCB:
 
 Like the schematic, the PCB has guiding lines printed on top to isolate the different function blocks.
 
+## Software
+
+### LIRC
+
+I've included a [LIRC](http://www.lirc.org) configuration file for and a photo of the particular remote control my LED stripe uses in the ``Software/LIRC`` directory. Note that at least with the LIRC 0.9.4c-9 version on the 2018-11-13 Raspbian 9 (Stretch) release I used, ``irrecord`` was erroneously recording a repeat code so ``irw`` didn't show any keys. If you generate a config yourself and ``irrecord`` generates a second column that is the same for all keys, try omitting these values, that worked for me.
+
 ## Credits
 
 As mentioned, I'm not really inventing something new here but combining different existing parts, so I'm standing on the shoulders of giants here and try to give appropriate credits to all the fine people on whose work I'm building. A big "Thank you" to the following people:
