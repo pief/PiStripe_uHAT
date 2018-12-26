@@ -90,6 +90,38 @@ Here are some images of the PCB:
 
 Like the schematic, the PCB has guiding lines printed on top to isolate the different function blocks.
 
+#### Parts list
+
+| Reference  | Amount |           Spec             |
+| :--------: | :----: | :------------------------- |
+|   C1, C2   |    2   | C 0805 2012 10uF/50V       |
+|     C3     |    1   | C 0805 2012 91pF           |
+|     C4     |    1   | C 0805 2012 100nF/50V      |
+| C5, C6, C7 |    3   | C 0805 2012 22UF           |
+|     C8     |    1   | CP 4.7uF                   |
+|     C9     |    1   | C 0805 2012 100nF          |
+|     D1     |    1   | LED 0805 2012 Red          |
+|     J1     |    1   | BarrelJack CUI PJ-063H     |
+|     J2     |    1   | Pin Header 1x4 Horizontal  |
+|     J3     |    1   | Pin Header 1x3 Horizontal  |
+|     J4     |    1   | Pin Header 2x20 Horizontal |
+|  JP1, JP2  |    2   | Pin Header 1x2 Vertical    |
+|     L1     |    1   | SRU1048-150Y               |
+|     Q1     |    1   | DMG2305UX-13               |
+| Q2, Q3, Q4 |    3   | IRF8721PBF-1               |
+|   R1, R3   |    2   | R 0805 2012 100K           |
+|     R2     |    1   | R 0805 2012 13.7K          |
+|     R4     |    1   | R 0805 2012 10K/1%         |
+|     R5     |    1   | R 0805 2012 47K/1%         |
+|     R6     |    1   | R 0805 2012 330            |
+| R7, R8, R9 |    1   | R 0805 2012 200            |
+|    R10     |    1   | R 0805 2012 470            |
+|  R11, R12  |    2   | R 0805 2012 4.7K           |
+|    R13     |    1   | R 0805 2012 1K             |
+|     U1     |    1   | TPS54202DDCR               |
+|     U2     |    1   | DMMT5401-7-F               |
+|     U3     |    1   | CAT24C32WI-GT3             |
+
 ## Software
 
 ### LIRC
