@@ -4,9 +4,9 @@
 3;"L1";"SRU1048";1;"SRU1048-150Y";;;
 4;"Q1";"SOT-23";1;"DMG2305UX-13";;;
 5;"REF1,REF2,REF3,REF4";"MountingHole_2.7mm_M2.5_DIN965_Pad";4;"MountingHole_2.7mm_M2.5_DIN965_Pad";;;
-6;"C1,C2";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"10uF/50V";;;
+6;"C1,C2";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"10uF/25V";;;
 7;"C3";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"91pF";;;
-8;"C4";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"100nF/50V";;;
+8;"C4";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"100nF/25V";;;
 9;"C8";"CP_Elec_4x5.8";1;"4.7uF";;;
 10;"C9";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"100nF";;;
 11;"D1";"D_0805_2012Metric";1;"LED";;;

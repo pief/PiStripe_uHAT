@@ -94,9 +94,9 @@ Like the schematic, the PCB has guiding lines printed on top to isolate the diff
 
 | Reference  | Amount |           Spec             |
 | :--------: | :----: | :------------------------- |
-|   C1, C2   |    2   | C 0805 2012 10uF/50V       |
+|   C1, C2   |    2   | C 0805 2012 10uF/25V       |
 |     C3     |    1   | C 0805 2012 91pF           |
-|     C4     |    1   | C 0805 2012 100nF/50V      |
+|     C4     |    1   | C 0805 2012 100nF/25V      |
 | C5, C6, C7 |    3   | C 0805 2012 22UF           |
 |     C8     |    1   | CP 4.7uF                   |
 |     C9     |    1   | C 0805 2012 100nF          |
