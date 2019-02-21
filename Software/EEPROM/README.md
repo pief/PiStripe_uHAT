@@ -6,7 +6,7 @@ This directory contains the sources and the binary ready for flashing into the P
 
 ### Rebuilding the binary
 
-There is usually no need to rebuild the binary but if you want to do it anyway, install `dtc`, the Device Tree Compiler, and type `make`. This will automatically `git clone` the Raspberry Pi foundation's `hats` directory so we gain access to their "eepromutils".
+There is usually no need to rebuild the binary but if you want to do it anyway, install `dtc`, the Device Tree Compiler, and type `make`. This will automatically `git clone` the Raspberry Pi foundation's `hats` directory so we gain access to their `eepromutils`.
 
 ### Flashing the binary
 
