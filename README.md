@@ -34,7 +34,7 @@ The uHAT features the following five functions:
 
 ## Hardware
 
-The PiStripe uHAT is nowhere near a ready-to-buy product. Instead, consult the **Hardware** directory for the KiCad project files, including a parts list and the PCB ready for etching.
+The PiStripe uHAT is not a ready-to-buy product. In fact it's not even a product as such. Instead, it's a do-it-yourself project. Consult the **Hardware** directory for the KiCad project files, including a parts list and the PCB ready for etching.
 
 ## Software
 
