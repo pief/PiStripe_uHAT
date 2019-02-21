@@ -14,7 +14,7 @@ The closest existing solution is the [ANAVI Light pHAT](https://www.crowdsupply.
 where I'd prefer a more compact pin header that matches the existing LED strip connector. But most of all, I don't like having to use two power supplies, one with 12V for the LED strip and still one with 5V for the Raspberry Pi. Unfortunately, with the ANAVI pHAT, it was decided to not implement the back powering option, i.e. integrating a switching regulator to convert 12V to 5V and supply these to the Raspberry Pi via the GPIO pins. Instead the PCB space was used for various options for all kinds of sensors,
 something I don't really need.
 
-So I thought, inspite of being not literate at electronics enough I'd build something myself and take the best parts and features of existing solutions (see [Credits](#credits)) and combine them into a HAT of my own. After all, that's what open hardware is all about!
+So I thought, inspite of being not literate at electronics enough I'd build something myself and take the best parts and features of existing solutions and combine them into a HAT of my own. After all, that's what open hardware is all about!
 
 And with great success: the PiStripe uHAT has now been built and tested successfully!
 
