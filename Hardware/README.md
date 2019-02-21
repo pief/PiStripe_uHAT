@@ -80,4 +80,4 @@ I'm not really inventing something new here but merely combining existing stuff 
 
 ### LICENSE
 
-The PiStripe uHAT PCB and its design files are licensed [LICENSE](CC-BY-SA).
+The PiStripe uHAT PCB and its design files are licensed [CC-BY-SA](LICENSE).
