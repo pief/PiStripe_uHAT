@@ -1,0 +1,67 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "brcm,bcm2708";
+
+    // Create /sys/class/leds/* entries assigned to GPIO pins 9, 10, 11
+    fragment@0 {
+        target = <&leds>;
+
+        __overlay__ {
+            pistripe_red {
+                label = "pistripe_red";
+                gpios = <&gpio 9 0>;
+                panic-indicator = "yes";
+            };
+
+            pistripe_blue {
+                label = "pistripe_blue";
+                gpios = <&gpio 10 0>;
+            };
+
+            pistripe_green {
+                label = "pistripe_green";
+                gpios = <&gpio 11 0>;
+            };
+        };
+    };
+
+    // Configure GPIO pin 25 as Input with Pull-down
+    fragment@1 {
+        target = <&gpio>;
+
+        __overlay__ {
+            pinctrl-names = "default";
+            pinctrl-0 = <&gpio_ir_pins>;
+
+            gpio_ir_pins: gpio_ir_pins {
+                brcm,pins = <25>;
+                brcm,function = <0>;
+                brcm,pull = <1>;
+            };
+        };
+    };
+
+    // Enable gpio-ir-receiver on GPIO pin 25
+    fragment@2 {
+        target-path = "/";
+
+        __overlay__ {
+            gpio_ir: ir-receiver {
+                compatible = "gpio-ir-receiver";
+
+                gpios = <&gpio 25 1>;
+                linux,rc-map-name = "rc-dib0700-nec";
+
+                status = "okay";
+            };
+        };
+    };
+
+    // Allow to override default RC map
+    __overrides__ {
+        // parameters
+        rc-map-name = <&gpio_ir>,"linux,rc-map-name";           // default rc map
+    };
+};
