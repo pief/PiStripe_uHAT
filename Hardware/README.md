@@ -45,7 +45,7 @@ The board's schematic and PCB have been designed with [KiCad](http://www.kicad-p
 
 Here's an image of the schematic:
 
-![Image of Schematic](Hardware/PiStripe_uHAT-Schematic.png)
+![Image of Schematic](PiStripe_uHAT-Schematic.png)
 
 As you can see, the schematic is clearly divided into different blocks that corrospond to the functions listed above, so comparisons with the original sources for the schematics (see [Credits](#credits)) should be rather easy.
 
@@ -53,10 +53,10 @@ As you can see, the schematic is clearly divided into different blocks that corr
 
 Here are some images of the PCB:
 
-![Image of naked PCB design](Hardware/PiStripe_uHAT-PCB-Design.png)
-![Image of PCB top side without parts](Hardware/PiStripe_uHAT-PCB-Top-NoParts.png)
-![Image of PCB bottom side](Hardware/PiStripe_uHAT-PCB-Bottom.png)
-![Image of PCB top side](Hardware/PiStripe_uHAT-PCB-Top.png)
+![Image of naked PCB design](PiStripe_uHAT-PCB-Design.png)
+![Image of PCB top side without parts](PiStripe_uHAT-PCB-Top-NoParts.png)
+![Image of PCB bottom side](PiStripe_uHAT-PCB-Bottom.png)
+![Image of PCB top side](PiStripe_uHAT-PCB-Top.png)
 
 Like the schematic, the PCB has guiding lines printed on top to isolate the different function blocks.
 
