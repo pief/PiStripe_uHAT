@@ -32,4 +32,3 @@ flash: PiStripe_uHAT.eep
 clean:
 	@echo "$$(tput bold)* Cleaning up...$$(tput sgr0)"
 	@rm -rf raspberrypi_hats
-	@rm PiStripe_uHAT.eep
